@@ -43,7 +43,7 @@ const BuyModel = () => {
 	};
 	useEffect(() => {
 		calculatePrice();
-	}, [tokenAmount]);
+	}, [tokenAmount, calculatePrice]);
 
 	if (isModelOpen) {
 		return (

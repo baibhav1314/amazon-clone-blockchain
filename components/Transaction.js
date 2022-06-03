@@ -24,7 +24,7 @@ const Transaction = ({ item }) => {
 		<>
 			{item.map((asset, index) => {
 				return (
-					<div className={styles.container}>
+					<div key={index} className={styles.container}>
 						<div className={styles.top}>
 							<div className="flex w-full gap-[80px]">
 								<div className={styles.topHeaderText}>

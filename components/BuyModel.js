@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useCallback } from "react";
 import { IoIosClose } from "react-icons/io";
 import { AmazonContext } from "../context/AmazonContext";
 import { HashLoader } from "react-spinners";
@@ -41,9 +41,10 @@ const BuyModel = () => {
 		price = price.toFixed(4);
 		setAmountDue(price);
 	};
-	useEffect(() => {
-		calculatePrice();
-	}, [tokenAmount, calculatePrice]);
+
+	// useEffect(() => {
+	// 	calculatePrice();
+	// }, [tokenAmount]);
 
 	if (isModelOpen) {
 		return (
@@ -80,9 +81,10 @@ const BuyModel = () => {
 									type={"text"}
 									placeholder="Amount.."
 									className={styles.inputBox}
-									onChange={(e) =>
-										setTokenAmount(e.target.value)
-									}
+									onChange={(e) => {
+										setTokenAmount(e.target.value);
+										calculatePrice();
+									}}
 									value={tokenAmount}
 								/>
 							</div>

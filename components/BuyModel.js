@@ -36,15 +36,14 @@ const BuyModel = () => {
 		setIsModalOpen,
 	} = useContext(AmazonContext);
 
-	useEffect(() => {
-		calculatePrice();
-	}, [tokenAmount]);
-
 	const calculatePrice = () => {
 		const price = parseFloat(tokenAmount * 0.0001);
 		price = price.toFixed(4);
 		setAmountDue(price);
 	};
+	useEffect(() => {
+		calculatePrice();
+	}, [tokenAmount]);
 
 	if (isModelOpen) {
 		return (

@@ -215,6 +215,7 @@ export const AmazonProvider = ({ children }) => {
 		assetsDataisLoading,
 		userData,
 		userDataisLoading,
+		isAuthenticated,
 	]);
 	return (
 		<AmazonContext.Provider

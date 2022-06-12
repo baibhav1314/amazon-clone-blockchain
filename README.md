@@ -12,10 +12,15 @@ A decentralised e-commerce website that let users buy NFT's in exchange for Amaz
 
 ## Screenshots
 
-![amazon1](https://user-images.githubusercontent.com/60654743/173203179-bfc1c0b1-2ca6-4533-a14e-3532e6c90ef5.png)
-![amazon2](https://user-images.githubusercontent.com/60654743/173203228-8fb6e7cc-5c3b-4d09-88fa-ec2d73dced87.png)
-![amazon3](https://user-images.githubusercontent.com/60654743/173203233-9f8dc2a3-77f0-4915-991f-89e93de314d6.png)
+### Home Page
 
+![amazon1](https://user-images.githubusercontent.com/60654743/173203179-bfc1c0b1-2ca6-4533-a14e-3532e6c90ef5.png)
+
+![amazon2](https://user-images.githubusercontent.com/60654743/173203228-8fb6e7cc-5c3b-4d09-88fa-ec2d73dced87.png)
+
+## Transaction History
+
+![amazon3](https://user-images.githubusercontent.com/60654743/173203233-9f8dc2a3-77f0-4915-991f-89e93de314d6.png)
 
 ## Run Locally
 
@@ -75,7 +80,6 @@ cd smart-contract
 `WALLET_PRIVATE_KEY`= Your private key
 
 ## Deploying Smart Contract
-
 
 To deploy the smart contract run
 
